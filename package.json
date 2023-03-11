@@ -1,0 +1,90 @@
+{
+  "publisher": "winches",
+  "name": "auto-import-export-file",
+  "displayName": "Auto ImportExport File",
+  "version": "1.0.0",
+  "private": true,
+  "description": "自动导入导出当前活跃文件目录下的其他文件",
+  "author": "winches",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/winchesHe/plugin-vscode-import-to-require.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "res/logo.png",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "vscode": "^1.69.0"
+  },
+  "activationEvents": [
+    "onCommand:AutoExportImportFile"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "AutoExportImportFile",
+        "title": "自动导入导出当前活跃文件目录下的其他文件"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "AutoExportImportFile",
+        "key": "ctrl+alt+E",
+        "mac": "cmd+shift+E",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorFocus",
+          "command": "AutoExportImportFile",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Auto ImportExport Configuration",
+      "properties": {
+        "depsCollect": {
+          "type": "boolean",
+          "default": true,
+          "description": "是否需要递归遍历当前活跃文件目录下的全部文件夹内容添加导入导出"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --external vscode",
+    "dev": "nr build --watch",
+    "lint": "eslint .",
+    "vscode:prepublish": "nr build",
+    "publish": "vsce publish --no-dependencies",
+    "pack": "vsce package --no-dependencies",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && nr publish"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
+    "@antfu/ni": "^0.17.2",
+    "@types/node": "^18.6.4",
+    "@types/vscode": "^1.69.0",
+    "eslint": "^8.21.0",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.2.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.4",
+    "vitest": "^0.21.0",
+    "vsce": "^2.10.0"
+  },
+  "dependencies": {
+    "pathe": "^1.1.0"
+  }
+}
