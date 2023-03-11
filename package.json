@@ -54,7 +54,7 @@
       "properties": {
         "depsCollect": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "是否需要递归遍历当前活跃文件目录下的全部文件夹内容添加导入导出"
         }
       }
