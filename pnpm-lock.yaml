@@ -9,15 +9,12 @@ importers:
       '@types/node': ^18.6.4
       '@types/vscode': ^1.69.0
       eslint: ^8.21.0
-      pathe: ^1.1.0
       rimraf: ^3.0.2
       tsup: ^6.2.1
       typescript: ^4.7.4
       vite: ^3.0.4
       vitest: ^0.21.0
       vsce: ^2.10.0
-    dependencies:
-      pathe: 1.1.0
     devDependencies:
       '@antfu/eslint-config': 0.25.2_ycpbpc6yetojsgtrx3mwntkhsu
       '@antfu/ni': 0.17.2
@@ -2870,10 +2867,6 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
     dev: true
-
-  /pathe/1.1.0:
-    resolution: {integrity: sha512-ODbEPR0KKHqECXW1GoxdDb+AZvULmXjVPy4rt+pGo2+TnjJTIPJQSVS6N63n8T2Ip+syHhbn52OewKicV0373w==}
-    dev: false
 
   /pathval/1.1.1:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}

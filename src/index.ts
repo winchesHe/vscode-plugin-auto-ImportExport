@@ -1,5 +1,5 @@
 import { readFileSync, readdirSync, statSync, writeFileSync } from 'fs'
-import { join } from 'pathe'
+import { join } from 'path'
 import type { ExtensionContext } from 'vscode'
 import { commands, window, workspace } from 'vscode'
 import { excludeFn } from './utils'
