@@ -31,4 +31,4 @@ Auto ImportExport File支持用户自定义配置。
 ## 其他
 为了使用该插件，需要运行在VSCode1.69.0或更高版本。
 
-如果您想为该插件做出贡献或提供有关此插件的反馈，请访问GitHub页面：https://github.com/winchesHe/vscode-plugin-auto-ImportExport，感谢您的使用。
+如果您想为该插件做出贡献或提供有关此插件的反馈，请访问GitHub页面：https://github.com/winchesHe/vscode-plugin-auto-ImportExport ，感谢您的使用。
