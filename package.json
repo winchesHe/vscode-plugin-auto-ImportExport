@@ -2,7 +2,7 @@
   "publisher": "winches",
   "name": "auto-import-export-file",
   "displayName": "Auto ImportExport File",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "description": "自动导入导出当前活跃文件目录下的其他文件",
   "author": "winches",
@@ -56,6 +56,11 @@
           "type": "boolean",
           "default": false,
           "description": "是否需要递归遍历当前活跃文件目录下的全部文件夹内容添加导入导出"
+        },
+        "createIndex": {
+          "type": "boolean",
+          "default": false,
+          "description": "是否为子目录添加index.ts"
         }
       }
     }

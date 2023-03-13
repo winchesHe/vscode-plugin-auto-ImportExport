@@ -1,4 +1,5 @@
 import { excludeList } from '../constants'
+export * from './getOptions'
 
 export const excludeFn = (args: string[]) => {
   return args.filter((i) => {

@@ -14,4 +14,5 @@ export const excludeList = [
   'dist',
   'build',
   '.json',
+  '.test',
 ]

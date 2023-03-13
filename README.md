@@ -23,10 +23,18 @@
 
 - Mac: **command+shift+E**
 
-## 配置
+## 插件配置
 Auto ImportExport File支持用户自定义配置。
 
-在插件配置中，可以通过修改depsCollect参数启用或禁用插件的自动遍历子目录功能。默认情况下，该参数为false，不会遍历全部文件夹内容添加导入导出。
+`depsCollect`
+在插件配置中，可以通过修改depsCollect参数启用或禁用插件的自动遍历子目录功能。
+
+**默认情况下，该参数为false**，不会遍历全部文件夹内容添加导入导出。
+
+`createIndex`
+插件配置中，createIndex控制插件是否为子目录不存在index的创建index，并自动导出该子目录的其他文件（不遍历）
+
+**默认情况下，该参数为false**，不会自动创建子目录index。
 
 ## 其他
 为了使用该插件，需要运行在VSCode1.69.0或更高版本。
