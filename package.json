@@ -2,7 +2,7 @@
   "publisher": "winches",
   "name": "auto-import-export-file",
   "displayName": "Auto ImportExport File",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "private": true,
   "description": "自动导入导出当前活跃文件目录下的其他文件",
   "author": "winches",
